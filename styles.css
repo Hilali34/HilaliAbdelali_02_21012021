@@ -1,0 +1,168 @@
+/* general */
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+body
+{
+    font-family: 'Raleway', sans-serif;
+    font-size:15px;
+}
+
+header
+{
+    min-height:120px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #F2F2F2;
+    width: 100%;
+    display: inline-block;
+}
+ul
+{
+    list-style:none;
+}
+a
+{
+    text-decoration: none;
+    color:black;
+}
+
+header img
+{
+    margin-top: 32px;
+    float:left;
+}
+nav 
+{
+    float: right;
+    margin-top: 50px;
+   
+}
+
+nav ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;  
+    
+}
+nav ul li 
+{
+  margin-left: 65px;
+}
+
+
+
+#sign-on
+{
+    color: #0065FC;
+}
+
+h2
+{
+    width: 90%;
+    margin-bottom: 25px;
+    margin-right: 20px;
+}
+
+/* rechearch */
+
+#research
+{
+    height: 100px;
+    width: 100%;
+    margin:20px;
+    background-color: #F2F2F2;
+}
+
+#filtre
+{
+    height: 50px;
+    width: 100%;
+    margin: 20px;
+    background-color: #F2F2F2;
+}
+
+#search-field-area
+{
+    height:50px;
+    margin-top: 15px;
+    background-color: #F2F2F2;
+}
+
+/* lodging and popular */
+
+#main-section
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,420px);
+    grid-column-gap: 30px;
+    width: 100%;
+    
+    
+
+}
+
+#lodging 
+{
+    grid-column: 1/2;
+    width:880px;
+    height: 625px;
+    background-color: #F2F2F2;
+    margin:20px;
+    border-radius: 10px;
+   
+}
+
+
+#popular
+{
+    grid-column: 3/3;
+    width:420px;
+    height: 880;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+
+}
+
+/* mainFooter */
+
+#mainFooter
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    justify-content: stretch;
+    background-color: #F2F2F2;
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+
+}
+
+footer ul li
+{
+    margin-right: 100px;
+    margin-top:5px; 
+}
+footer ul
+{
+    margin-top:20px;
+    
+}
+#about
+{
+    margin-left: 20px;
+}
+#commitement
+{
+    margin-left: 20px;
+}
+#help
+{
+    margin-left: 20px; 
+}
