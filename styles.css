@@ -1,8 +1,9 @@
 /* general */
 *
 {
-    margin: 0px;
-    padding: 0px;
+    margin:0;
+    padding: 0;
+
 }
 body
 {
@@ -10,14 +11,20 @@ body
     font-size:15px;
 }
 
+#main_Wrapper
+{
+    width: 1336px;
+
+}
+
 header
 {
-    min-height:120px;
+    height:120px;
     margin-left: 20px;
     margin-right: 20px;
     background-color: #F2F2F2;
-    width: 100%;
-    display: inline-block;
+    justify-content: baseline;
+
 }
 ul
 {
@@ -31,41 +38,40 @@ a
 
 header img
 {
-    margin-top: 32px;
     float:left;
-}
-nav 
-{
-    float: right;
-    margin-top: 50px;
+    margin-top:32px;
+   
    
 }
 
-nav ul
+
+header nav
 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-end;  
-    
-}
-nav ul li 
-{
-  margin-left: 65px;
+    float:right;
+    margin-top:50px;
+   
 }
 
+header ul li 
+{
+    display:inline-block;
+    float: left;
 
+}
+header ul li a
+{
+    margin-left: 65px; 
+}
 
 #sign-on
 {
     color: #0065FC;
 }
 
-h2
+a:hover
 {
-    width: 90%;
-    margin-bottom: 25px;
-    margin-right: 20px;
+    outline: 1px solid #0065FC;
+
 }
 
 /* rechearch */
@@ -73,7 +79,6 @@ h2
 #research
 {
     height: 100px;
-    width: 100%;
     margin:20px;
     background-color: #F2F2F2;
 }
@@ -81,7 +86,6 @@ h2
 #filtre
 {
     height: 50px;
-    width: 100%;
     margin: 20px;
     background-color: #F2F2F2;
 }
@@ -92,41 +96,267 @@ h2
     margin-top: 15px;
     background-color: #F2F2F2;
 }
+#searh-button
+{
+   
+}
+#search-field
+{
+   
+}
+#first-title
+{
+    margin-bottom:0px;
+}
+
 
 /* lodging and popular */
 
 #main-section
 {
-    display: grid;
-    grid-template-columns: repeat(auto-fill,420px);
-    grid-column-gap: 30px;
-    width: 100%;
-    
-    
-
+  
+    display: flex;
+    flex-wrap: wrap-reverse; 
+   
+   
 }
 
 #lodging 
 {
-    grid-column: 1/2;
-    width:880px;
-    height: 625px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     background-color: #F2F2F2;
     margin:20px;
     border-radius: 10px;
-   
+    max-width: 825px;
+    height: auto;
+    padding: 25px;
+
 }
 
+h2
+{
+    width: 100%;
+    margin-bottom: 25px;
+}
 
 #popular
 {
-    grid-column: 3/3;
-    width:420px;
-    height: 880;
+    padding: 40px;
     margin: 20px;
+    max-height: auto;
+    max-width: 331px;
     border-radius: 10px;
     background-color: #F2F2F2;
+    justify-content: center;
+    
 
+}
+
+main figure 
+{
+    width: 235px;
+    height: 115px;
+    margin: 15px;
+    border-style: solid;
+    border-width: 5px 5px 80px 5px;
+    border-color: white;
+    border-radius: 15px;
+    
+}
+
+
+main figure img 
+{
+    width: 235px;
+    height: 115px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+    
+    
+
+}
+
+main figcaption 
+{
+
+}
+
+aside figure
+{
+    width: 127px;
+    height: 134px;
+    margin-bottom: 35px;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px 211px 5px 5px ;
+    border-radius: 15px;
+    
+
+}
+
+aside figure img
+{
+    width: 127px;
+    height: 134px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    object-fit: cover;
+    object-position: center;
+   
+}
+
+aside figcaption
+{
+    position: relative;
+    top: -100px;
+    left: 150px;
+    
+}
+
+
+/*activirys*/
+
+#activitys
+{
+    width: auto;
+    height: auto;
+    margin: 20px 20px 60px 20px;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+   
+   
+    
+}
+#gird-activitys
+{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,300px);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    justify-content: center;
+
+}
+
+#fig_01
+{
+    width: 300px;
+    height: 390px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 0px 55px 0px ;
+    
+}
+#image_01
+{
+    width: 300px;
+    height: 390px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+    object-position: center bottom;
+    
+    
+}
+#fig_02
+{
+    width: 300px;
+    height: 180px;
+    border-radius: 15px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 0px 55px 0px ;
+    margin-bottom: 45px;
+
+}
+#image_02
+{
+    width: 300px;
+    height: 180px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+    object-position: center;
+}
+#fig_03
+{
+    width: 300px;
+    height: 110px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 0px 55px 0px ;
+    
+}
+#image_03
+{
+    width: 300px;
+    height: 110px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+    object-position: center;
+}
+#fig_04
+{
+    width: 300px;
+    height: 390px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 0px 55px 0px ;
+}
+#image_04
+{
+    width: 300px;
+    height: 390px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+    object-position: center;
+}
+#fig_05
+{
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 0px 55px 0px ;
+    margin-bottom: 40px;
+}
+#image_05
+{
+    width: 300px;
+    height: 140px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+    object-position: center;
+}
+#fig_06
+{
+    width: 300px;
+    height: 155px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 0px 55px 0px ;
+}
+#image_06
+{
+    width: 300px;
+    height: 155px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+    object-position: center;
 }
 
 /* mainFooter */
@@ -146,8 +376,11 @@ h2
 
 footer ul li
 {
+    
     margin-right: 100px;
-    margin-top:5px; 
+    margin-top:5px;
+    
+   
 }
 footer ul
 {
@@ -157,12 +390,15 @@ footer ul
 #about
 {
     margin-left: 20px;
+
 }
 #commitement
 {
     margin-left: 20px;
+
 }
 #help
 {
     margin-left: 20px; 
+
 }
