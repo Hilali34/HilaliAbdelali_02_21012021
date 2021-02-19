@@ -347,6 +347,7 @@ aside p {
  
 }
 .element-activities {
+  display: inline-block;
   -webkit-box-shadow: 0px 0px 14px -5px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 0px 14px -5px rgba(0, 0, 0, 0.4);
 }
@@ -568,6 +569,7 @@ footer ul {
   #grid-activities{
     justify-content: center;
   }
+  
   #fig_01 {
     width: 20.9375rem;
     height: 12.5rem;
