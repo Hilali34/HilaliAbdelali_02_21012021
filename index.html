@@ -17,7 +17,7 @@
   </head>
 
   <body>
-    <div id="wrapper">
+    
     <header>
       <img src="images/Logo_Reservia.svg" alt="Logo_Reservia" />
 
@@ -25,10 +25,11 @@
         <ul>
           <li id="li-element1"><a href="#lodging">Hébergements</a></li>
           <li id="li-element2"><a href="#activities">Activités</a></li>
-          <li id="li-element3"><a id="sign-on" href="#">S'inscrire</a></li>
+          <li id="li-element3"><a href="#" id="sign-on">S'inscrire</a></li>
         </ul>
       </nav>
     </header>
+    <div id="line-nav"></div>
 
     <section id="research">
       <div>
@@ -53,25 +54,33 @@
       <h2 id="filtre-title">Filtres</h2>
 
       <div id="filtre-list">
-        <button type="Button" id="button1">
-          <i class="fas fa-money-bill-wave"></i>
-          <span>Economique</span>
-        </button>
+        <a href="#">
+          <button type="Button" id="button1">
+            <i class="fas fa-money-bill-wave"></i>
+            <span>Economique</span>
+          </button>
+        </a>
+       
+        <a href="#">
+          <button type="Button" id="button1">
+            <i class="fas fa-money-bill-wave"></i>
+            <span>Familial</span>
+          </button>
+        </a>
 
-        <button type="button">
-          <i class="fas fa-child"></i>
-          <span>Familial</span>
-        </button>
+        <a href="#">
+          <button type="Button" id="button1">
+            <i class="fas fa-money-bill-wave"></i>
+            <span>Romantique</span>
+          </button>
+        </a>
 
-        <button type="button">
-          <i class="fas fa-heart"></i>
-          <span>Romantique</span>
-        </button>
-
-        <button type="button">
-          <i class="fas fa-dog"></i>
-          <span>Animaux autorisés</span>
-        </button>
+        <a href="#">
+          <button type="Button" id="button1">
+            <i class="fas fa-money-bill-wave"></i>
+            <span>Annimaux autoriés</span>
+          </button>
+        </a>
       </div>
     </section>
 
@@ -86,10 +95,13 @@
       <main id="lodging">
         <h2 id="title-lodging">Hébergement à Marseille</h2>
         <a href="#" class="element-lodging">
-          <img
+          <div class="img-lodging">
+            <img
             src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
             alt="auberge la cannibiere"
           />
+          </div>
+          
           <div><h3>Auberge la Cannibiere</h3>
             <p> Nuit à partir de <span class="price-bold">25€</span></p>
           </div> 
@@ -103,10 +115,13 @@
         </a>
 
         <a href="#" class="element-lodging">
-          <img
+          <div class="img-lodging">
+            <img
             src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
             alt="Hôtel du port"
           />
+          </div>
+         
           <div>
           <h3>Hôtel du port</h3>
           <p> Nuit à partir de 52<span class="price-bold">€</span></p>
@@ -123,14 +138,18 @@
         </a>
 
         <a href="#" class="element-lodging">
-          <img
+          <div class="img-lodging">
+            <img
             src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
             alt="Hôtel les mouettes"
           />
+          </div>
+         
           <div>
             <h3>Hôtel Les mouettes</h3>
             <p> Nuit à partir de 76<span class="price-bold">€</span></p>
           </div>
+
           <div classe="star">
             <span class="fa fa-star fa-sm checked"></span>
             <span class="fa fa-star fa-sm checked"></span>
@@ -142,10 +161,12 @@
         </a>
 
         <a href="#" class="element-lodging">
-          <img
+          <div class="img-lodging">
+            <img
             src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
             alt="Hôtel de la mer"
           />
+        </div>
           <div>
             <h3>Hôtel de la mer</h3>
             <p>Nuit à partir de 46<span class="price-bold">€</span></p>
@@ -161,10 +182,12 @@
         </a>
 
         <a href="#" class="element-lodging">
-          <img
+          <div class="img-lodging">
+            <img
             src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
             alt="Auberge le pannier"
           />
+          </div>
           <div>
             <h3>Auberge Le pannier</h3>
             <p> Nuit à partir de <span class="price-bold">23€</span> </p>
@@ -181,10 +204,13 @@
         </a>
 
         <a href="#" class="element-lodging">
+         <div class="img-lodging">
           <img
             src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
             alt="Hotel chez Amina"
           />
+         </div>
+          
           <div>
             <h3>Hotel chez Amina</h3>
           <p>Nuit à partir de 96<span class="price-bold">€</span></p>
@@ -381,6 +407,5 @@
         </ul>
       </div>
     </footer>
-  </div>
   </body>
 </html>
