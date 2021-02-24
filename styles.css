@@ -7,13 +7,16 @@
 body {
   font-family: "Raleway", sans-serif;
   width: 100%;
+  margin: 0;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
   height: 5.625rem;
-  margin-left: auto;
+  grid-template-columns: 120px 1fr 100px;
+  grid-template-rows: 1fr;
+  align-items: center;
+}
 }
 h1 {
   font-size: 1.4rem;
@@ -48,33 +51,33 @@ a {
 
 /*******************************   hearder   *********************************/
 header nav {
-  margin-top: 2.5rem;
+  display:grid;
+  justify-items: end;
+  align-items: center;
 }
 
 header img {
-  margin-top: 2rem;
-  margin-left: 1.25rem;
   max-width: 6.25rem;
   max-height: 2.8rem;
+  padding-left: 1.25rem;
 }
 header ul {
   display: flex;
 }
-
-header ul li a {
-  margin-left: 4rem;
-  padding: 0 0.94rem 0 0.94rem;
+nav li{
+  padding-right: 4.0625rem;
 }
 
 #sign-on {
   color: #0065fc;
   font-weight: bolder;
+  align-self: center;
 }
 
-nav a:hover {
+nav ul a:hover {
   color: #0065fc;
   border-top: solid 0.125rem #0065fc;
-  padding-top: 2.35rem;
+  padding-top: 2.1563rem;
 }
 #line-nav{
   height: 3px;
@@ -160,6 +163,8 @@ form {
 #filtre-list a {
   display: inline-block;
   height: 3.125rem;
+  margin-bottom: 0.94rem;
+
 }
 #filtre a :hover{
   color: #0065fc;
@@ -168,7 +173,6 @@ form {
 #filtre-list button {
   height: 3.125rem;
   border: solid 0.125rem #f2f2f2;
-  margin-bottom: 0.94rem;
   margin-right: 1.125rem;
   border-radius: 1.5625rem;
   background-color: white;
@@ -220,7 +224,6 @@ button span {
   display: flex;
   flex-wrap: wrap-reverse;
   margin-bottom: 2.1875rem;
-  justify-content: center;
 }
 .price-bold {
   font-weight: 600;
@@ -442,6 +445,7 @@ aside p {
 /*********************************** mainFooter ******************************/
 
 #mainFooter {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   background-color: #f2f2f2;
@@ -470,29 +474,44 @@ footer ul {
   h2 {
     margin-left: 20px;
   }
-  #li-element1 {
-    position: absolute;
-    left: -2.5rem;
-    top: 6.25rem;
+ 
+  header {
+    display: grid;
+    height: 5.625rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: flex-start;
   }
-  #li-element2 {
-    position: absolute;
-    left: 40%;
-    top: 6.25rem;
+  header nav{
+    grid-row-start: 2;
+    grid-column: span 2;
+    align-self: center;
   }
-  nav a:hover {
+  nav #li-element1 a{
+    padding-left: 2.5rem;
+    padding-right:2.825rem;
+  }
+  nav #li-element2 a{
+    padding-right: 5.625rem;
+    padding-left: 2.8125rem;
+  }
+
+  #sign-on{
+  justify-self:flex-end;
+  }
+  
+  nav ul a:hover {
     color: #0065fc;
-    border-bottom: solid 0.125rem #0065fc;
-    padding-bottom: 0.3125rem;
+    border-bottom: solid 0.1875rem #0065fc;
+    padding-bottom: 0.875rem;
     border-top: none;
   }
-  nav a {
-    padding-left: 30px;
-  }
+  
   #line-nav{
     height: 3px;
     background-color:#f2f2f2;
-    display: inline;
+    display: block;
   }
   form {
     margin-top: 2rem;
