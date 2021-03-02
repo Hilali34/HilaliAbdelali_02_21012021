@@ -16,7 +16,7 @@ body {
 header {
   display: grid;
   height: 5.625rem;
-  grid-template-columns: 120px 1fr 100px;
+  grid-template-columns: 7.5rem 1fr 7.5rem;
   grid-template-rows: 1fr;
   align-items: center;
 }
@@ -56,7 +56,6 @@ a {
 header nav {
   display:grid;
   justify-items: end;
-  align-items: center;
 }
 
 header img {
@@ -66,7 +65,6 @@ header img {
 }
 header ul {
   display: flex;
-
 }
 
 #sign-on {
@@ -83,10 +81,9 @@ nav ul a:hover {
 }
 nav ul a {
   display: flex;
-  height: 5.625rem;
   align-items: center;
   border-top: solid 0.125rem transparent;
-  padding:0 2rem;
+  padding:2.1875rem;
 }
 /************************** rechearch&filtre **********************/
 
@@ -330,7 +327,7 @@ aside p {
 /****************************** activities *******************************/
 
 #activities {
-  width: 85.375rem;
+  width: 100%;
   height: auto;
   display: flex;
   flex-wrap: wrap;
@@ -450,7 +447,7 @@ aside p {
   padding: 1.25rem;
 
 }
-#commitement {
+#ourlodging{
   margin-left: 14.375rem;
   margin-right: 18.125rem;
 }
@@ -480,25 +477,27 @@ footer ul {
   header nav{
     grid-row-start: 2;
     grid-column: span 2;
-    align-self: center;
+    justify-items: center;
+    width: 100%;
+    
+
+  }
+  nav ul a {
+    display: flex;
+    padding: 15px 4.3125rem;
+    border-top: none;
+    border-bottom: solid 0.1875rem #f2f2f2;
   }
 
-  #sign-on{
-  justify-self:flex-end;
-  }
-  
   nav ul a:hover {
     color: #0065fc;
     border-bottom: solid 0.1875rem #0065fc;
-    padding-bottom: 0.7813rem;
     border-top: none;
   }
-  
-  #line-nav{
-    height: 3px;
-    background-color:#f2f2f2;
-    display: block;
-  }
+  #sign-on{
+    justify-self:flex-end;
+    }
+
   form {
     margin-top: 2rem;
   }
