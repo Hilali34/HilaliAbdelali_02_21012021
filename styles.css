@@ -116,17 +116,17 @@ form {
   color: white;
   background-color: #0065fc;
   border-radius: 0.9375rem 0.9375rem 0.9375rem 0.9375rem;
-  line-height: 3.125rem !important;
+  line-height: 3.125rem;
   margin-left: -1.125rem;
   border: none;
   display: none;
 }
-.fa-map-marker-alt {
+form .fa-map-marker-alt {
   width: 3.125rem;
   height: 3.125rem;
   background-color: #f2f2f2;
   border-radius: 0.9375rem 0rem 0rem 0.9375rem;
-  line-height: 3.1875rem !important;
+  line-height: 3.1875rem;
   text-align: center;
   margin-right: -0.3125rem;
   font-size: 1.1rem;
@@ -217,7 +217,6 @@ button span {
 #main-section {
   display: flex;
   flex-wrap: wrap-reverse;
-  justify-content: space-between;
   margin-bottom: 2.1875rem;
 }
 .price-bold {
@@ -229,33 +228,33 @@ button span {
   background-color: #f2f2f2;
   border-radius: 1.25rem;
   width: 63%;
-  padding: 1.5625rem;
+  padding: 2rem;
 }
-
 #title-lodging {
   height: 1.25rem;
   width: 100%;
   margin-bottom: 0.9375rem;
 }
 .element-lodging {
-  width: 28%;
-  height: 25%;
+  width: 14.75rem;
+  height: 11.875rem;
   margin: 0rem 0.9375rem 0.9375rem 0.9375rem;
-  padding: 5px;
+  padding: 0.3125rem;
   background-color: white;
   border-radius: 1.25rem;
   -webkit-box-shadow: 0rem 0rem 0.875rem -0.1875rem rgba(0, 0, 0, 0.2);
   box-shadow: 0rem 0rem 0.875rem -0.1875rem rgba(0, 0, 0, 0.2);
 }
 main img {
-  width: 100%;
-  height: 60%; 
+  width: 14.6875rem;
+  height: 7.1875rem;
   border-top-left-radius: 1.25rem;
   border-top-right-radius: 1.25rem;
   object-fit: cover;
 }
 .lodging-info{
   padding-left: 0.625rem;
+  padding-top: 0.625rem;
 }
 .element-lodging p {
   font-size: 0.85rem;
@@ -274,9 +273,10 @@ main img {
 #popular {
   display: flex;
   flex-direction: column;
-  width: 25%;
-  padding: 2.5rem;
+  width: 20.6875rem;
+  padding: 2rem;
   border-radius: 1.25rem;
+  margin-left:1.8125rem;
   background-color: #f2f2f2;
 }
 .fa-chart-line {
@@ -286,8 +286,8 @@ main img {
 .elements-popular {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  height: 18%;
+  width: 20.8125rem;
+  height: 8.375rem;
   margin-bottom: 2.1875rem;
   padding: 5px;
   background-color: white;
@@ -296,17 +296,27 @@ main img {
   box-shadow: 0rem 0rem 0.875rem -0.1875rem rgba(0, 0, 0, 0.2);
 }
 aside img {
-  width: 35%;
-  height: 100%;
+  width: 7.9375rem;
+  height: 8.375rem;
   border-top-left-radius: 1.25rem;
   border-bottom-left-radius: 1.25rem;
   object-fit: cover;
+  flex-shrink: 0;
 }
 .popular-info{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding-left:1rem;
+  width: 6.25rem;
+}
+.popular-info .star{
+  align-self: flex-end;
+  padding-bottom: 0.625rem;
 }
 #popular p {
   font-size: 0.85rem;
+  padding-top: 0.625rem;
 }
 aside p {
   width: 10rem;
@@ -458,8 +468,30 @@ footer ul {
 
 
 /********************************* media queries **************************/
-
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1365px) {
+  #popular {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 2.1875rem;
+    margin-left: 0;
+  }
+  .elements-popular {
+    margin-right: 1.875rem;
+  }
+  #lodging {
+    width: 80%;
+  }
+  .element-lodging {
+    margin-bottom: 2.1875rem;
+  }
+  #activities {
+    width: auto;
+    height: auto;
+  }
+}
+@media screen and (max-width: 679px) {
   h1 {
     padding-top: 4rem;
   }
@@ -519,7 +551,7 @@ footer ul {
     background-color: #f2f2f2;
     justify-content: center;
     border-radius: 0px 0px 0px 0px;
-    margin-right: 0;
+    width: 100%;
   }
 
   #lodging {
@@ -652,25 +684,4 @@ footer ul {
     margin-left: 0;
   }
 }
-@media screen and (max-width: 1365px) {
-  #popular {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-bottom: 2.1875rem;
-  }
-  .elements-popular {
-    margin-right: 1.875rem;
-  }
-  #lodging {
-    width: 100%;
-  }
-  .element-lodging {
-    margin-bottom: 2.1875rem;
-  }
-  #activities {
-    width: auto;
-    height: auto;
-  }
-}
+
