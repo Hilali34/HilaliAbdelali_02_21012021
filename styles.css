@@ -254,7 +254,7 @@ main img {
 }
 .lodging-info{
   padding-left: 0.625rem;
-  padding-top: 0.625rem;
+  padding-top: 0.3125rem;
 }
 .element-lodging p {
   font-size: 0.85rem;
@@ -495,6 +495,12 @@ footer ul {
   h1 {
     padding-top: 4rem;
   }
+  h2{
+    text-align: center;
+  }
+  #wrapper{
+    padding: 0;
+  }
   header {
     display: grid;
     height: 5.625rem;
@@ -524,7 +530,9 @@ footer ul {
     border-bottom: solid 0.1875rem #0065fc;
     border-top: none;
   }
-  
+  #research{
+    padding-left: 1rem;
+  }
   form {
     margin-top: 2rem;
   }
@@ -537,6 +545,7 @@ footer ul {
   }
   #filtre {
     padding-top: 5rem;
+    padding-left: 1rem;
   }
   #filtre-title {
     padding-top: 10px;
@@ -544,6 +553,29 @@ footer ul {
   }
   #info-result {
     width: 23.125rem;
+  }
+  #info-result{
+    padding-left: 1rem;
+  }
+  #info-result p{
+    width: 350px;
+  }
+ 
+  #lodging {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    border-radius: 0px 0px 0px 0px;
+    width: 100%;
+    padding: 1.5625rem 0;
+    background-color: white;
+    justify-content: center;
+  }
+  .element-lodging {
+    width: 20.625rem;
+  }
+  #p-plus{
+    padding-left: 1rem;
   }
   #popular {
     padding: 2.5rem 0;
@@ -553,35 +585,18 @@ footer ul {
     border-radius: 0px 0px 0px 0px;
     width: 100%;
   }
-
-  #lodging {
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    border-radius: 0px 0px 0px 0px;
-    width: 100%;
-    height: auto;
-    padding: 1.5625rem;
-    background-color: white;
-    justify-content: center;
+  .elements-popular{
+    margin: 1rem auto;
   }
-
-  .element-lodging {
-    width: 20.625rem;
-  }
-
   main img {
     width: 20.625rem;
   }
   #activities {
-    width: 100%;
-    height: auto;
+    width: 20.9375rem;    
+    margin: auto;
     justify-content: center;
   }
-  #grid-activities {
-    justify-content: center;
-  }
-
+ 
   #fig_01 {
     width: 20.9375rem;
     height: 12.5rem;
@@ -680,8 +695,19 @@ footer ul {
     object-fit: cover;
     object-position: center;
   }
-  #commitement {
-    margin-left: 0;
+  #mainFooter{
+    padding: 1.25rem 0;
   }
+  #about{
+    padding-left: 1rem;
+  }
+  #ourlodging{
+    padding-left: 1rem;
+  }
+  #help{
+    padding-left: 1rem;
+  }
+  
+
 }
 
