@@ -12,6 +12,8 @@ body {
 #wrapper{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+  max-width: 87.5rem;
+  margin: auto;
 }
 header {
   display: grid;
@@ -19,8 +21,10 @@ header {
   grid-template-columns: 7.5rem 1fr 7.5rem;
   grid-template-rows: 1fr;
   align-items: center;
+  max-width: 87.5rem;
+  margin: auto;
 }
-}
+
 h1 {
   font-size: 1.4rem;
   font-weight: 600;
@@ -218,6 +222,7 @@ button span {
   display: flex;
   flex-wrap: wrap-reverse;
   margin-bottom: 2.1875rem;
+  flex:1;
 }
 .price-bold {
   font-weight: 600;
@@ -513,8 +518,14 @@ footer ul {
     grid-row-start: 2;
     grid-column: span 2;
   }
+  header img{
+    padding-top:1.5rem;
+    padding-bottom:1rem;
+  }
   #sign-on{
     justify-self: end;
+    padding-top:1.5rem;
+    padding-bottom:1rem;
   }
    nav ul a {
     display: flex;
@@ -708,6 +719,5 @@ footer ul {
     padding-left: 1rem;
   }
   
-
 }
 
