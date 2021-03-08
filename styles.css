@@ -162,13 +162,13 @@ form .fa-map-marker-alt {
   margin-bottom: 0;
   font-size: 1.2rem;
 }
-#filtre-list a {
+.filtre-element {
   display: inline-block;
   height: 3.125rem;
   margin-bottom: 0.94rem;
 
 }
-#filtre a :hover{
+#filtre-list >div :hover{
   color: #0065fc;
   border-color: #deebff;
 }
@@ -720,4 +720,3 @@ footer ul {
   }
   
 }
-
