@@ -455,6 +455,9 @@ aside p {
   background-color: #f2f2f2;
   margin-top: 1.25rem;
   padding: 1.25rem;
+  max-width: 87.5rem;
+  margin-right:auto;
+  margin-left: auto;
 
 }
 #ourlodging{
@@ -563,13 +566,13 @@ footer ul {
     padding-bottom: 0;
   }
   #info-result {
-    width: 23.125rem;
   }
   #info-result{
     padding-left: 1rem;
   }
   #info-result p{
-    width: 350px;
+    width: 315px;
+    word-break: break-word;
   }
  
   #lodging {
