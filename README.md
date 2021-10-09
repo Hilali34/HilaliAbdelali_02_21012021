@@ -27,6 +27,6 @@ Les icônes proviennent de la bibliothèque Font Awesome. Les couleurs de la cha
 
 La police du site est Raleway.
 
-### La maquette: 
-![](https://user.oc-static.com/upload/2021/09/29/16329280343051_Desktop%20-%201.png)
+### La maquette de la version Desktop:
+![page2image914905440](https://github.com/Hilali34/HilaliAbdelali_02_21012021/blob/master/images/maquette%20reservia.png)
 
