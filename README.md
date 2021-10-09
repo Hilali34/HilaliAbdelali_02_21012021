@@ -28,5 +28,14 @@ Les icônes proviennent de la bibliothèque Font Awesome. Les couleurs de la cha
 La police du site est Raleway.
 
 ### La maquette de la version Desktop:
+
+
+
 ![page2image914905440](https://github.com/Hilali34/HilaliAbdelali_02_21012021/blob/master/images/maquette%20reservia.png)
+
+
+## Technoligies utilisées : 
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
