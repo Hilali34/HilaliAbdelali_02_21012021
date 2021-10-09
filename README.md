@@ -1,7 +1,7 @@
 [![Openclassrooms](https://camo.githubusercontent.com/e47c349811ac404b8147bd362c598e61c7d20225df17499c6373b44f6ee08a3d/68747470733a2f2f31746f3170726f67726573732e66722f77702d636f6e74656e742f75706c6f6164732f323031392f30352f6f70656e636c617373726f6f6d732d65313535373736313233363135382e706e67)](https://openclassrooms.com/)
 
 # Parcours Développeur Web 
-# Projet 1 : Reservia 
+# Projet 2 : Reservia 
 
 ## Intitulé du Projet :  Transformez une maquette en site web avec HTML & CSS.
 
