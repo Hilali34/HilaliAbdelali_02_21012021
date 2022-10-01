@@ -42,7 +42,6 @@ La police du site est Raleway.
 
 ## Resultat: 
 
-Lien Page GitHub: 
+DEMO: 
 
-https://hilali34.github.io/HilaliAbdelali_02_21012021/
-
+https://reservia-hilali.netlify.app
